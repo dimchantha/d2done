@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2D One</title>
+    <meta name="description" content="D2D is a delivery service established in Cambodia, providing multi-services on one platform for easy buying and selling.">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Style */
+        header {
+            display: flex;
+            align-items: center;
+            background: #0058A3;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 150px;
+        }
+        nav {
+            flex: 2;
+        }
+
+        /* Navigation Menu Style */
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 15px;
+            transition: background 0.3s;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #003f6b;
+            border-radius: 4px;
+            display: flex;
+        }
+
+        /* Main Content Style */
+        main {
+            padding: 20px;
+            background: #ffffff;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Slider Styles */
+        .slider {
+            position: relative;
+            width: 70%; /* Adjust width as needed */
+            margin: 20px auto;
+            overflow: hidden; /* Hide overflow */
+            border-radius: 50px; /* Rounded corners */
+        }
+
+        .slider img {
+            width: 100%; /* Make image fill the slider */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50px; /* Match the container's rounded corners */
+            display: none; /* Hide images initially */
+        }
+
+        .slider img.active {
+            display: block; /* Show only active image */
+        }
+
+        .slider-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .slider-buttons button {
+            background-color: #0058A3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .slider-buttons button:hover {
+            background-color: #003f6b;
+        }
+
+        /* Button Styles for Business Section */
+        .business-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        /* Button Group Style */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .business-button {
+            width: 150px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .business-button:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+
+        /* Download Links and QR Code Style */
+        .download-section {
+            margin: 20px 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background: #0058A3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s;
+            width: 250px;
+        }
+
+        .download-button:hover {
+            background: #004070;
+        }
+
+        .qr-code img {
+            margin-top: 20px;
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer Style */
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+            background: #0058A3;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer div {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                max-width: 100px;
+            }
+
+            nav ul li a {
+                padding: 8px 12px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            footer div {
+                margin: 8px;
+            }
+        }
+
+        /* Hide all sections by default */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="D2D Logo"> <!-- Replace with your logo file -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection(event, 'home')">Home</a></li>
+                <li><a href="#" onclick="showSection(event, 'about')">About Us</a></li>
+                <li><a href="#" onclick="showSection(event, 'business')">Business</a></li>
+                <li><a href="#" onclick="showSection(event, 'merchants')">Merchants</a></li>
+                <li><a href="#" onclick="showSection(event, 'career')">Career</a></li>
+                <li><a href="#" onclick="showSection(event, 'download')">Download App</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hidden">
+            <h2>Welcome to D2D</h2>
+            <div class="slider">
+                <img id="slide1" class="active" src="Discount 50.png" alt="Discount 50"> <!-- Replace with your image file -->
+                <img id="slide2" src="VOUCHER 1.png" alt="VOUCHER 1"> <!-- Replace with your image file -->
+                <img id="slide3" src="VOUCHER 3.png" alt="VOUCHER 3"> <!-- Replace with your image file -->
+            </div>
+            <div class="slider-buttons">
+                <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button id="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <ul>
+                <li>Information about the company...</li>
+            </ul>
+        </section>
+
+        <!-- Business Section -->
+        <section id="business" class="hidden">
+            <h2>Our Business</h2>
+            <div>
+                <h3>Services We Offer</h3>
+                <div class="business-buttons">
+                    <button class="business-button" onclick="showServiceDetails('express')">Express</button>
+                    <button class="business-button" onclick="showServiceDetails('products')">Products</button>
+                    <button class="business-button" onclick="showServiceDetails('services')">Services</button>
+                </div>
+                <div id="express" class="hidden service-options">
+                    <h4>Express Options:</h4>
+                    <div class="button-group">
+                        <button class="business-button">Bike Express</button>
+                        <button class="business-button">Bike Standard</button>
+                        <button class="business-button">Tuk Tuk Delivery</button>
+                    </div>
+                </div>
+                <div id="products" class="hidden service-options">
+                    <h4>Products Options:</h4>
+                    <div class="button-group">
+                        <button class="business-button">Food Delivery</button>
+                        <button class="business-button">Groceries</button>
+                        <button class="business-button">Other Items</button>
+                    </div>
+                </div>
+                <div id="services" class="hidden service-options">
+                    <h4>Service Options:</h4>
+                    <div class="button-group">
+                        <button class="business-button">Laundry Services</button>
+                        <button class="business-button">Cleaning Services</button>
+                        <button class="business-button">Moving Services</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Merchant Section -->
+        <section id="merchants" class="hidden">
+            <h2>For Merchants</h2>
+            <p>Details for merchants...</p>
+        </section>
+
+        <!-- Career Section -->
+        <section id="career" class="hidden">
+            <h2>Careers</h2>
+            <p>Career opportunities...</p>
+        </section>
+
+        <!-- Download App Section -->
+        <section id="download" class="hidden">
+            <h2>Download Our App</h2>
+            <div class="download-section">
+                <a href="https://play.google.com/store/apps/details?id=com.d2done.app&hl=en_GB" class="download-button">Download for Android</a>
+                <a href="https://apps.apple.com/kh/app/d2d-one/id1575850241" class="download-button">Download for iOS</a>
+            </div>
+            <div class="qr-code">
+                <h2>Scan Download</h2>
+                <img src="QR Code .png" alt="Download QR Code"> <!-- Replace with your QR code file -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <h4>Contact Us:</h4>
+            <p>Email: info@d2done.com</p>
+            <p>Phone: 086 93 93 55</p>
+        </div>
+        <div>
+            <h4>Follow Us:</h4>
+            <a href="https://www.facebook.com/d2donekh">Facebook</a> | 
+            <a href="#">Instagram</a> |
+            <a href="#">Telegram</a> 
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let currentSlide = 0;
+
+        // Get all the images in the slider
+        const allImages = document.querySelectorAll('.slider img');
+
+        function showSlide(index) {
+            allImages.forEach((img, i) => {
+                img.classList.remove('active'); // Hide all images
+                if (i === index) {
+                    img.classList.add('active'); // Show the active image
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + allImages.length) % allImages.length; // Cycle through slides
+            showSlide(currentSlide);
+        }
+
+        // Automatically change slides every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Show the initial slide
+        showSlide(currentSlide);
+
+        // Function to show sections
+        function showSection(event, sectionId) {
+            event.preventDefault();
+            const sections = document.querySelectorAll('main > section');
+            sections.forEach(section => {
+                section.classList.add('hidden'); // Hide all sections
+            });
+            document.getElementById(sectionId).classList.remove('hidden'); // Show selected section
+        }
+
+        // Function to show service details
+        function showServiceDetails(serviceId) {
+            const services = document.querySelectorAll('.service-options');
+            services.forEach(service => {
+                service.classList.add('hidden'); // Hide all service options
+            });
+            document.getElementById(serviceId).classList.remove('hidden'); // Show selected service options
+        }
+    </script>
+</body>
+</html>
