@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2D One - Super App for Delivery & Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-bolt logo-icon"></i>
+                D2D One
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#careers" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Company <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="about.html" class="dropdown-link">About Us</a></li>
+                        <li class="dropdown-item"><a href="blog.html" class="dropdown-link">Blog</a></li>
+                        <li class="dropdown-item"><a href="contact.html" class="dropdown-link">Contact</a></li>
+                        <li class="dropdown-item"><a href="press.html" class="dropdown-link">Press</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="download.html" class="btn btn-primary">Download App</a>
+                </li>
+            </ul>
+
+            <select id="languageSelect" class="language-select">
+                <option value="en">English</option>
+                <option value="km">Khmer</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Superfast Delivery & Services in Cambodia</h1>
+                    <p>From groceries to home repairs - get everything delivered to your doorstep with our lightning-fast service network.</p>
+                    <div class="hero-btns">
+                        <a href="download.html" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download App
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            <i class="fas fa-search"></i> Explore Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="container">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Delivery Partners</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Cities Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Customer Support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose D2D One?</h2>
+                    <p>We provide the fastest and most reliable delivery and service solutions in Cambodia</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Superfast Delivery</h3>
+                        <p>Get your items delivered in record time with our optimized delivery network.</p>
+                        <a href="features.html#delivery" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verified Professionals</h3>
+                        <p>All our service providers are thoroughly vetted and certified for quality.</p>
+                        <a href="features.html#professionals" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3>Transparent Pricing</h3>
+                        <p>No hidden fees or surprises - know exactly what you'll pay upfront.</p>
+                        <a href="features.html#pricing" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our customer service team is always ready to assist you anytime.</p>
+                        <a href="features.html#support" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Real-time Tracking</h3>
+                        <p>Track your delivery or service professional in real-time on the map.</p>
+                        <a href="features.html#tracking" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Quality Guarantee</h3>
+                        <p>Not satisfied? We'll make it right or your money back.</p>
+                        <a href="features.html#guarantee" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>Everything you need, delivered with speed and care</p>
+                </div>
+
+                <div class="services-tabs">
+                    <button class="tab-btn active">All Services</button>
+                    <button class="tab-btn">Delivery</button>
+                    <button class="tab-btn">Food</button>
+                    <button class="tab-btn">Home Services</button>
+                    <button class="tab-btn">ePharmacy</button>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">Express</span>
+                            <h3>Instant Delivery</h3>
+                            <p>Get anything delivered within 60 minutes in the city center.</p>
+                            <a href="delivery.html" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">Food</span>
+                            <h3>Restaurant Delivery</h3>
+                            <p>From local favorites to international cuisine delivered fast.</p>
+                            <a href="food-delivery.html" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">ePharmacy</span>
+                            <h3>Medicine Delivery</h3>
+                            <p>Prescription and over-the-counter medicines delivered safely.</p>
+                            <a href="epharmacy.html" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">Home Service</span>
+                            <h3>Air-Con Repair</h3>
+                            <p>Professional air conditioning service and maintenance.</p>
+                            <a href="home-services.html#aircon" class="btn btn-secondary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">Home Service</span>
+                            <h3>Plumbing Services</h3>
+                            <p>Fix leaks, clogs, and all plumbing issues with certified plumbers.</p>
+                            <a href="home-services.html#plumbing" class="btn btn-secondary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="service-content">
+                            <span class="service-badge">Home Service</span>
+                            <h3>Electrical Repairs</h3>
+                            <p>Safe and reliable electrical services by certified professionals.</p>
+                            <a href="home-services.html#electrical" class="btn btn-secondary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="container">
+            <div class="section-title">
+                <h2>Trusted By</h2>
+                <p>We partner with leading brands across Cambodia</p>
+            </div>
+
+            <div class="partners">
+                <a href="https://partner1.com"><img src="https://via.placeholder.com/150x60?text=Partner+1" alt="Partner Logo" class="partner-logo"></a>
+                <a href="https://partner2.com"><img src="https://via.placeholder.com/150x60?text=Partner+2" alt="Partner Logo" class="partner-logo"></a>
+                <a href="https://partner3.com"><img src="https://via.placeholder.com/150x60?text=Partner+3" alt="Partner Logo" class="partner-logo"></a>
+                <a href="https://partner4.com"><img src="https://via.placeholder.com/150x60?text=Partner+4" alt="Partner Logo" class="partner-logo"></a>
+                <a href="https://partner5.com"><img src="https://via.placeholder.com/150x60?text=Partner+5" alt="Partner Logo" class="partner-logo"></a>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section class="careers" id="careers">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Join Our Team</h2>
+                    <p>Be part of Cambodia's fastest growing delivery and services platform</p>
+                </div>
+
+                <div class="career-grid">
+                    <div class="career-card">
+                        <span class="career-category">Operations</span>
+                        <h3>Delivery Operations Manager</h3>
+                        <p>Phnom Penh • Full-time</p>
+                        <p>Lead and optimize our delivery network to ensure superfast service across Cambodia.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+
+                    <div class="career-card">
+                        <span class="career-category">Customer Service</span>
+                        <h3>Customer Support Specialist</h3>
+                        <p>Phnom Penh • Full-time</p>
+                        <p>Provide exceptional support to our customers and help resolve their issues quickly.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+
+                    <div class="career-card">
+                        <span class="career-category">Technology</span>
+                        <h3>Mobile App Developer</h3>
+                        <p>Remote • Full-time</p>
+                        <p>Build and improve our mobile applications to deliver the best user experience.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+
+                    <div class="career-card">
+                        <span class="career-category">Marketing</span>
+                        <h3>Digital Marketing Manager</h3>
+                        <p>Phnom Penh • Full-time</p>
+                        <p>Develop and execute digital marketing strategies to grow our customer base.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+
+                    <div class="career-card">
+                        <span class="career-category">HR</span>
+                        <h3>Talent Acquisition Specialist</h3>
+                        <p>Phnom Penh • Full-time</p>
+                        <p>Find and attract top talent to join our fast-growing team across Cambodia.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+
+                    <div class="career-card">
+                        <span class="career-category">Driver</span>
+                        <h3>Delivery Driver Partner</h3>
+                        <p>Multiple Locations • Flexible</p>
+                        <p>Join our network of delivery partners and earn on your own schedule.</p>
+                        <a href="#career-form" class="btn btn-secondary">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-form" id="career-form">
+                    <h3>Apply for Position</h3>
+                    <p>Fill out the form below and we'll get back to you soon</p>
+                    
+                    <form id="jobApplicationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="position" class="form-label">Position Applying For</label>
+                            <select id="position" class="form-control" required>
+                                <option value="">Select a position</option>
+                                <option value="Delivery Operations Manager">Delivery Operations Manager</option>
+                                <option value="Customer Support Specialist">Customer Support Specialist</option>
+                                <option value="Mobile App Developer">Mobile App Developer</option>
+                                <option value="Digital Marketing Manager">Digital Marketing Manager</option>
+                                <option value="Talent Acquisition Specialist">Talent Acquisition Specialist</option>
+                                <option value="Delivery Driver Partner">Delivery Driver Partner</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience" class="form-label">Years of Experience</label>
+                            <select id="experience" class="form-control" required>
+                                <option value="">Select experience level</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="1-3">1-3 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="5+">5+ years</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resume" class="form-label">Upload Resume/CV</label>
+                            <input type="file" id="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="coverLetter" class="form-label">Cover Letter</label>
+                            <textarea id="coverLetter" class="form-control" placeholder="Tell us why you'd be a great fit..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="referral" class="form-label">How did you hear about us?</label>
+                            <select id="referral" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="Job Board">Job Board</option>
+                                <option value="Company Website">Company Website</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Friend/Colleague">Friend/Colleague</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Customers Say</h2>
+                    <p>Hear from people who use our services every day</p>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "D2D One has completely transformed how I get things done. From food delivery to home services, everything is just one tap away!"
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Sophal Chan</h4>
+                                <p>Phnom Penh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "As a small business owner, D2D One's services have saved me so much time and money."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Rithy Kim</h4>
+                                <p>Siem Reap</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "The air-con repair service saved me during the hottest month. Will definitely use again!"
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="author-avatar">
+                            <div class="author-info">
+                                <h4>Malin Seng</h4>
+                                <p>Battambang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Experience Superfast Services?</h2>
+                <p>Join thousands of happy customers across Cambodia</p>
+                <div class="cta-btns">
+                    <a href="download.html" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download App
+                    </a>
+                    <a href="#careers" class="btn btn-outline" style="color: white; border-color: white;">
+                        <i class="fas fa-user-plus"></i> Join Our Team
+                    </a>
+                    <a href="merchant.html" class="btn btn-outline" style="color: white; border-color: white;">
+                        <i class="fas fa-store"></i> Register as Merchant
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>D2D One</h3>
+                    <p style="color: #A0AEC0; margin-bottom: 20px;">The fastest way to get anything delivered or serviced in Cambodia.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/d2done"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/d2done"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com/d2done"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/d2done"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="delivery.html">Delivery Services</a></li>
+                        <li><a href="food-delivery.html">Food Delivery</a></li>
+                        <li><a href="epharmacy.html">ePharmacy</a></li>
+                        <li><a href="home-services.html">Home Services</a></li>
+                        <li><a href="business.html">Business Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="safety.html">Safety</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Download App</h3>
+                    <div class="app-download">
+                        <a href="https://apps.apple.com/app/d2d-one"><img src="https://via.placeholder.com/150x50?text=App+Store" alt="App Store"></a>
+                        <a href="https://play.google.com/store/apps/d2d-one"><img src="https://via.placeholder.com/150x50?text=Google+Play" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 D2D One. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot/Support -->
+    <div class="chat-support">
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>Live Support</h4>
+                <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
