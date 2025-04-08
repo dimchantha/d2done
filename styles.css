@@ -67,7 +67,7 @@ body {
 /* General Language Selector Styles */
 .language-selector {
     position: fixed;
-    top: 30px;
+    top: 40px;
     right: 20px;
     z-index: 1100;
     display: flex;
@@ -89,7 +89,7 @@ body {
 /* Mobile Adjustment for Language Selector */
 @media (max-width: 768px) {
     .language-selector {
-        top: 10x; /* Move slightly down for better visibility */
+        top: 5x; /* Move slightly down for better visibility */
         
         left: 72%; /* Center horizontally */
         transform: translateX(-50%); /* Adjust for exact centering */
@@ -100,9 +100,9 @@ body {
     }
 
     .lang-btn {
-        padding: 5px 8px; /* Increase padding for better touch area */
+        padding: 3px 8px; /* Increase padding for better touch area */
         font-size: 14px; /* Increase font size */
-        margin-top: 10px
+        margin-top: 15px
     }
 }
 .lang-btn.active {
@@ -425,17 +425,26 @@ header {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 700;
     display: flex;
     align-items: center;
-    color: var(--blue);
+    text-decoration: none;
 }
 
-.logo-icon {
-    margin-right: 10px;
-    color: var(--yellow);
-    font-size: 32px;
+.logo-img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 120px; /* Smaller size for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 100px; /* Even smaller size for very small screens */
+    }
 }
 
 /* Navigation */
