@@ -338,6 +338,20 @@ body {
 .chatbot-option-btn:active {
     transform: scale(0.95);
 }
+/* Mobile Adjustment for Chatbot Options */
+@media (max-width: 768px) {
+    .chatbot-options {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 10px; /* Increase vertical spacing */
+    }
+
+    .chatbot-option-btn {
+        font-size: 18px; /* Larger font size for mobile */
+        padding: 15px 20px; /* Increased padding for better touch area */
+        min-height: 50px; /* Ensure minimum height for better tap area */
+        width: 50%; /* Full width on mobile */
+    }
+}
 
 /* Layout Components */
 .container {
