@@ -110,20 +110,20 @@ body {
     color: white;
 }
 
-/* Chatbot Styles */
+/* Chatbot Button */
 .chatbot-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
+    bottom: 30px; /* Adjust as needed */
+    right: 30px; /* Adjust as needed */
+    width: 60px; /* Increase width for better visibility */
+    height: 60px; /* Increase height for better visibility */
     background-color: var(--blue);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 24px; /* Increase font size for better readability */
     cursor: pointer;
     z-index: 1000;
     box-shadow: var(--shadow-lg);
@@ -135,12 +135,13 @@ body {
     transform: scale(1.1);
 }
 
+/* Chatbot Container */
 .chatbot-container {
     position: fixed;
-    bottom: 100px;
-    right: 30px;
-    width: 380px;
-    max-height: 600px;
+    bottom: 100px; /* Adjust as needed */
+    right: 30px; /* Adjust as needed */
+    width: 380px; /* Adjust width for mobile screens */
+    max-height: 600px; /* Adjust maximum height */
     background: white;
     border-radius: 16px;
     box-shadow: var(--shadow-lg);
@@ -150,9 +151,24 @@ body {
     overflow: hidden;
     border: 1px solid var(--light-blue);
 }
-
 .chatbot-container.active {
     display: flex;
+}
+
+/* Mobile Adjustment for Chatbot */
+@media (max-width: 768px) {
+    .chatbot-btn {
+        width: 70px; /* Slightly larger width for mobile */
+        height: 70px; /* Slightly larger height for mobile */
+        font-size: 28px; /* Larger font size for better visibility */
+    }
+
+    .chatbot-container {
+        width: 90%; /* Full width on mobile */
+        right: 5%; /* Centered horizontally */
+        bottom: 80px; /* Adjust distance from the bottom */
+        max-height: 80vh; /* Limit height to 80% of viewport */
+    }
 }
 
 .chatbot-header {
