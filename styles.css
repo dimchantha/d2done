@@ -31,6 +31,8 @@
     align-items: center; /* Ensures vertical alignment */
 }
 
+
+
 body {
     background-color: var(--light);
     color: var(--dark);
@@ -40,7 +42,7 @@ body {
     
 }
 
-/* Language Selector */
+/* General Language Selector Styles */
 .language-selector {
     position: fixed;
     top: 30px;
@@ -62,6 +64,25 @@ body {
     transition: var(--transition);
 }
 
+/* Mobile Adjustment for Language Selector */
+@media (max-width: 768px) {
+    .language-selector {
+        top: 10x; /* Move slightly down for better visibility */
+        
+        left: 72%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact centering */
+        right: auto; /* Remove right positioning */
+        display: flex;
+        justify-content: center; /* Ensure buttons are centered */
+        gap: 1px; /* Add spacing between buttons */
+    }
+
+    .lang-btn {
+        padding: 5px 8px; /* Increase padding for better touch area */
+        font-size: 14px; /* Increase font size */
+        margin-top: 10px
+    }
+}
 .lang-btn.active {
     background: var(--blue);
     color: white;
