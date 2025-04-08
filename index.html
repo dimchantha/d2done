@@ -23,14 +23,20 @@
     <!-- Chatbot Container -->
     <div class="chatbot-container" id="chatbotContainer">
         <div class="chatbot-header">
-            <h3>D2D Support</h3>
+            <div class="chatbot-header-content">
+                <img src="https://via.placeholder.com/40?text=Bot" alt="Bot Avatar" class="chatbot-avatar">
+                <div>
+                    <h3>D2D Assistant</h3>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
             <button class="close-chatbot" id="closeChatbot">
                 <i class="fas fa-times"></i>
             </button>
         </div>
         <div class="chatbot-messages" id="chatbotMessages">
             <div class="chatbot-message bot">
-                <p>Hello! How can I help you today?</p>
+                <p>Welcome to D2D One! How can I assist you today?</p>
             </div>
         </div>
         <div class="chatbot-input">
@@ -38,8 +44,17 @@
             <button id="sendChatbotMessage"><i class="fas fa-paper-plane"></i></button>
         </div>
         <div class="chatbot-options">
-            <button class="live-support-btn" id="liveSupportBtn">
+            <button class="chatbot-option-btn" data-action="track">
+                <i class="fas fa-map-marker-alt"></i> Track Order
+            </button>
+            <button class="chatbot-option-btn" data-action="services">
+                <i class="fas fa-concierge-bell"></i> View Services
+            </button>
+            <button class="chatbot-option-btn" data-action="support">
                 <i class="fas fa-headset"></i> Live Support
+            </button>
+            <button class="chatbot-option-btn" data-action="faq">
+                <i class="fas fa-question-circle"></i> FAQ
             </button>
         </div>
     </div>
