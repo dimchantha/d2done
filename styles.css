@@ -155,21 +155,7 @@ body {
     display: flex;
 }
 
-/* Mobile Adjustment for Chatbot */
-@media (max-width: 768px) {
-    .chatbot-btn {
-        width: 70px; /* Slightly larger width for mobile */
-        height: 70px; /* Slightly larger height for mobile */
-        font-size: 28px; /* Larger font size for better visibility */
-    }
 
-    .chatbot-container {
-        width: 90%; /* Full width on mobile */
-        right: 5%; /* Centered horizontally */
-        bottom: 80px; /* Adjust distance from the bottom */
-        max-height: 80vh; /* Limit height to 80% of viewport */
-    }
-}
 
 .chatbot-header {
     padding: 15px 20px;
@@ -337,20 +323,6 @@ body {
 
 .chatbot-option-btn:active {
     transform: scale(0.95);
-}
-/* Mobile Adjustment for Chatbot Options */
-@media (max-width: 768px) {
-    .chatbot-options {
-        flex-direction: column; /* Stack buttons vertically on mobile */
-        gap: 10px; /* Increase vertical spacing */
-    }
-
-    .chatbot-option-btn {
-        font-size: 18px; /* Larger font size for mobile */
-        padding: 15px 20px; /* Increased padding for better touch area */
-        min-height: 50px; /* Ensure minimum height for better tap area */
-        width: 50%; /* Full width on mobile */
-    }
 }
 
 /* Layout Components */
